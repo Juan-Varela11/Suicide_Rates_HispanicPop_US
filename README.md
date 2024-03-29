@@ -1,4 +1,4 @@
-# Suicide Death Rates within the US Hispanic & Latino communities.
+# Suicide Death Rates within the US Hispanic & Latino Communities.
 Analysis of the suicide death rates of the Hispanic &amp; Latino population within the United States. Data collected from the Centers for Disease Control and Prevention. 
 
 ## Datasets<br>
