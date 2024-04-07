@@ -1,10 +1,11 @@
 import pandas as pd
 import numpy as np
-import sklearn as sk
+import sklearn 
 from math import *
 import plotly.express as px
 import matplotlib.pyplot as plt
 from scipy import optimize
+import sklearn.svm
 
 # Load in data
 cdc_data = pd.read_csv('Death_rates_for_suicide__by_sex__race__Hispanic_origin__and_age__United_States_20240327.csv')
@@ -36,11 +37,11 @@ plt.savefig(fname='deaths_vs_year.jpg')
 plt.close()
 
 # Determine a best-fit polynomial for the plots
-def male_cdc_fit(x,a,b,c,d,e):
-    return a*x**4 + b*x**3 + c*x**2 + d*x + e 
+def male_cdc_fit(x,a,b,c,d):
+    return a*x**3 + b*x**2 + c*x + d 
 
-def female_cdc_fit(x,a,b,c,d,e):
-    return a*x**4 + b*x**3 + c*x**2 + d*x + e 
+def female_cdc_fit(x,a,b,c,d):
+    return a*x**3 + b*x**2 + c*x + d 
 
 params_male, params_covariance_male = optimize.curve_fit(male_cdc_fit, male_hispanic_cdc['YEAR'], male_hispanic_cdc['ESTIMATE'])
 params_female, params_covariance_female = optimize.curve_fit(female_cdc_fit, female_hispanic_cdc['YEAR'], female_hispanic_cdc['ESTIMATE'])
@@ -50,11 +51,11 @@ plt.scatter(male_hispanic_cdc['YEAR'],male_hispanic_cdc['ESTIMATE'],label='Male'
 plt.scatter(female_hispanic_cdc['YEAR'],female_hispanic_cdc['ESTIMATE'],label='Female',c='red')
 plt.plot(male_hispanic_cdc['YEAR'], male_cdc_fit(male_hispanic_cdc['YEAR'],params_male[0],
                                                  params_male[1],params_male[2],
-                                                 params_male[3],params_male[4]),
+                                                 params_male[3]),
                                                  label='Male data fit',c='blue')
 plt.plot(female_hispanic_cdc['YEAR'], female_cdc_fit(female_hispanic_cdc['YEAR'],params_female[0],
                                                  params_female[1],params_female[2],
-                                                 params_female[3],params_female[4]),
+                                                 params_female[3]),
                                                  label='Female data fit',c='red')
 plt.title('Estimate of Suicide Deaths in US Hispanic/Latino Community per Year')
 plt.xlabel('Year')
@@ -63,26 +64,26 @@ plt.legend(loc='best')
 plt.savefig(fname='deaths_vs_year_withfit.jpg')
 plt.close()
 
-# Extending the poly by 10 years, to see how the fit evolves
+# Extending the poly by 10 years, to see how the fit evolves 
 time_future = pd.Series([2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028])
 
 plt.scatter(male_hispanic_cdc['YEAR'],male_hispanic_cdc['ESTIMATE'],label='Male',c='blue')
 plt.scatter(female_hispanic_cdc['YEAR'],female_hispanic_cdc['ESTIMATE'],label='Female',c='red')
 plt.plot(male_hispanic_cdc['YEAR'], male_cdc_fit(male_hispanic_cdc['YEAR'],params_male[0],
                                                  params_male[1],params_male[2],
-                                                 params_male[3],params_male[4]),
+                                                 params_male[3]),
                                                  label='Male data fit',c='blue')
 plt.plot(female_hispanic_cdc['YEAR'], female_cdc_fit(female_hispanic_cdc['YEAR'],params_female[0],
                                                  params_female[1],params_female[2],
-                                                 params_female[3],params_female[4]),
+                                                 params_female[3]),
                                                  label='Female data fit',c='red')
 plt.plot(time_future, male_cdc_fit(time_future,params_male[0],
                                                  params_male[1],params_male[2],
-                                                 params_male[3],params_male[4]),
+                                                 params_male[3]),
                                                  c='blue',linestyle = 'dashed')
 plt.plot(time_future, female_cdc_fit(time_future,params_female[0],
                                                  params_female[1],params_female[2],
-                                                 params_female[3],params_female[4]),
+                                                 params_female[3]),
                                                  c='red',linestyle = 'dashed')
 plt.title('Predictive Trend with Current Fit')
 plt.xlabel('Year')
@@ -90,3 +91,10 @@ plt.ylabel('Suicide Death Rate (per 100,000 residents)')
 plt.legend(loc='best')
 plt.savefig(fname='deaths_vs_year_fitextended.jpg')
 plt.close()
+
+# Use sklearn to predict future values and compare how they line up to current scipy fit (WIP)
+
+# Creating feature matrix and target vector 
+features_names = []
+x_male = male_hispanic_cdc.loc[:,features_names].values
+x_female = female_hispanic_cdc.loc[:,features_names].values
