@@ -12,6 +12,8 @@ Analysis of the suicide death rates of the Hispanic &amp; Latino population with
 [Behavioral Health Concerns about Hispanic and Latino Americans](https://www.samhsa.gov/behavioral-health-equity/hispanic-latino) <br>
 
 ##  Results<br>
+![Suicide Deaths per Year(Male age bracktes](Figures/deaths_vs_year_male_ages.jpg)
+![Suicide Deaths per Year(Male age bracktes](Figures/deaths_vs_year_female_ages.jpg)
 ![Suicide Deaths per Year](Figures/deaths_vs_year.jpg)
 ![Suicide Deaths per Year with poly fit (4th order)](Figures/deaths_vs_year_withfit.jpg)
 ![Suicide Deaths per Year with poly fit (4th order) extended by 10 years](Figures/deaths_vs_year_fitextended.jpg)
