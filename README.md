@@ -14,6 +14,7 @@ Analysis of the suicide death rates of the Hispanic &amp; Latino population with
 [Rising Latino suicide rates worry community leaders](https://www.nbcnews.com/news/latino/rising-latino-suicide-rates-worry-community-leaders-rcna134363) <br>
 [Hispanic Child Suicides in the United States, 2010-2019](https://pubmed.ncbi.nlm.nih.gov/34997530/) <br>
 [A Look at the Latest Suicide Data and Change Over the Last Decade](https://www.kff.org/mental-health/issue-brief/a-look-at-the-latest-suicide-data-and-change-over-the-last-decade/) <br>
+[Life Expectancy Increases, However Suicides Up in 2022](https://www.cdc.gov/nchs/pressroom/nchs_press_releases/2023/20231129.htm) <br>
 
 ##  Results<br>
 ![Suicide Deaths per Year(Male age bracktes](Figures/deaths_vs_year_male_ages.jpg)
