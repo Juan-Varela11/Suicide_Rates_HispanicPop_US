@@ -17,7 +17,7 @@ Analysis of the suicide death rates of the Hispanic &amp; Latino population with
 [Understanding Death Data (CDC)](https://www.cdc.gov/surveillance/blogs-stories/understanding-death-data.html)<br>
 [Behavioral Health Concerns about Hispanic and Latino Americans](https://www.samhsa.gov/behavioral-health-equity/hispanic-latino) <br>
 
-##  Results<br>
+##  Visualizations<br>
 ![Suicide Deaths per Year(Male age bracktes](Figures/deaths_vs_year_male_ages.jpg)
 ![Suicide Deaths per Year(Male age bracktes](Figures/deaths_vs_year_female_ages.jpg)
 ![Suicide Deaths per Year](Figures/deaths_vs_year.jpg)
