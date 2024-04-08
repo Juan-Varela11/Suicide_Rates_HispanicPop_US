@@ -29,4 +29,4 @@ Observed a higher rate of suicide deaths in the male Hispanic & Latino community
 
 Will visualize and compare these trends to comparable ones for different races (White, Black or African American, Asian or Pacific Islanders, American Indian or Alaskan Native). These different race groupings defined by the CDC. <br>
 
-Data to be extended with available data from 2019 - 2021, and provisional data for time periods onward. <br>
+Data to be extended with available data from 2019 - 2021, and provisional data for 2022 onward. <br>
