@@ -6,10 +6,14 @@ Analysis of the suicide death rates of the Hispanic &amp; Latino population with
 [Mental & Behavioral Statistics via OMH (Office of Minority Health)](https://minorityhealth.hhs.gov/mental-and-behavioral-health-hispanics) <br>
 [Underlying Cause of Death, 2018-2021, Single Race (CDC)](https://wonder.cdc.gov/controller/datarequest/D158;jsessionid=8656C16750ED571516010C46F032) <br>
 
-
 ##  Terminology & Statistics to Know<br>
 [Age-Adjusted vs. Crude Data](https://www.nlm.nih.gov/oet/ed/stats/02-600.html#:~:text=It%20is%20important%20to%20remember,for%20comparisons%20to%20other%20populations.) <br>
 [Behavioral Health Concerns about Hispanic and Latino Americans](https://www.samhsa.gov/behavioral-health-equity/hispanic-latino) <br>
+
+## Articles & Papers
+[Rising Latino suicide rates worry community leaders](https://www.nbcnews.com/news/latino/rising-latino-suicide-rates-worry-community-leaders-rcna134363) <br>
+[Hispanic Child Suicides in the United States, 2010-2019](https://pubmed.ncbi.nlm.nih.gov/34997530/) <br>
+[A Look at the Latest Suicide Data and Change Over the Last Decade](https://www.kff.org/mental-health/issue-brief/a-look-at-the-latest-suicide-data-and-change-over-the-last-decade/) <br>
 
 ##  Results<br>
 ![Suicide Deaths per Year(Male age bracktes](Figures/deaths_vs_year_male_ages.jpg)
