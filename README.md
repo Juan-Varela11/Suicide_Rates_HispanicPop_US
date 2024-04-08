@@ -15,6 +15,8 @@ Analysis of the suicide death rates of the Hispanic &amp; Latino population with
 [Hispanic Child Suicides in the United States, 2010-2019](https://pubmed.ncbi.nlm.nih.gov/34997530/) <br>
 [A Look at the Latest Suicide Data and Change Over the Last Decade](https://www.kff.org/mental-health/issue-brief/a-look-at-the-latest-suicide-data-and-change-over-the-last-decade/) <br>
 [Life Expectancy Increases, However Suicides Up in 2022](https://www.cdc.gov/nchs/pressroom/nchs_press_releases/2023/20231129.htm) <br>
+[Understanding Death Data (CDC)](https://www.cdc.gov/surveillance/blogs-stories/understanding-death-data.html)<br>
+
 
 ##  Results<br>
 ![Suicide Deaths per Year(Male age bracktes](Figures/deaths_vs_year_male_ages.jpg)
@@ -26,4 +28,6 @@ Analysis of the suicide death rates of the Hispanic &amp; Latino population with
 ## Conclusions<br>
 Observed a higher rate of suicide deaths in the male Hispanic & Latino community when compared to the female population. A higher rate of suicide deaths is present in people younger than 65 within the female population as of 2018, while men see an increasing rate of comparable magnitude across all age brackers. Rates of suicide deaths seeminly experienced a slump from approximately 2000 to 2010, before seeing an increase. <br>
 
-Will visualize and compare these trends to comparable ones for different races (White, Black or African American, Asian or Pacific Islanders, American Indian or Alaskan Native). These different race groupings defined by the CDC. 
+Will visualize and compare these trends to comparable ones for different races (White, Black or African American, Asian or Pacific Islanders, American Indian or Alaskan Native). These different race groupings defined by the CDC. <br>
+
+Data to be extended with available data from 2019 - 2021, and provisional data for time periods onward. <br>
