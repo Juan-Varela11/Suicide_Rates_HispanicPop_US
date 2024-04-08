@@ -25,7 +25,7 @@ Analysis of the suicide death rates of the Hispanic &amp; Latino population with
 ![Suicide Deaths per Year with poly fit (4th order) extended by 10 years](Figures/deaths_vs_year_fitextended.jpg)
 
 ## Conclusions<br>
-Observed a higher rate of suicide deaths in the male Hispanic & Latino community when compared to the female population. A higher rate of suicide deaths is present in people younger than 65 within the female population as of 2018, while men see an increasing rate of comparable magnitude across all age brackers. Rates of suicide deaths seeminly experienced a slump from approximately 2000 to 2010, before seeing an increase. <br>
+Observed a higher rate of suicide deaths in the male Hispanic & Latino community when compared to the female population. A higher rate of suicide deaths is present in people younger than 65 within the female population as of 2018, while men see an increasing rate of comparable magnitude across all age brackets except at 65 years or above at which the rate has plateaued. Rates of suicide deaths seeminly experienced a slump from approximately 2000 to 2010, before seeing an increase. <br>
 
 Will visualize and compare these trends to comparable ones for different races (White, Black or African American, Asian or Pacific Islanders, American Indian or Alaskan Native). These different race groupings defined by the CDC. <br>
 
