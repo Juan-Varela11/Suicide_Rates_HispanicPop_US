@@ -1,5 +1,5 @@
 # Suicide Death Rates within the US Hispanic & Latino Communities.
-Analysis of the suicide death rates of the Hispanic &amp; Latino population within the United States. Data collected from the Centers for Disease Control and Prevention. 
+Analysis of the suicide death rates of the Hispanic &amp; Latino population within the United States. Data collected from the Centers for Disease Control and Prevention (CDC) and the Office of Minority Health (OMH).  
 
 ## Datasets<br>
 [Death rates for suicide, by sex, race, Hispanic origin, and age: United States (CDC)](https://data.cdc.gov/NCHS/Death-rates-for-suicide-by-sex-race-Hispanic-origi/9j2v-jamp/about_data) <br>
@@ -17,3 +17,8 @@ Analysis of the suicide death rates of the Hispanic &amp; Latino population with
 ![Suicide Deaths per Year](Figures/deaths_vs_year.jpg)
 ![Suicide Deaths per Year with poly fit (4th order)](Figures/deaths_vs_year_withfit.jpg)
 ![Suicide Deaths per Year with poly fit (4th order) extended by 10 years](Figures/deaths_vs_year_fitextended.jpg)
+
+## Conclusions<br>
+Observed a higher rate of suicide deaths in the male Hispanic & Latino community when compared to the female population. A higher rate of suicide deaths is present in people younger than 65 within the female population as of 2018, while men see an increasing rate of comparable magnitude across all age brackers. Rates of suicide deaths seeminly experienced a slump from approximately 2000 to 2010, before seeing an increase. <br>
+
+Will visualize and compare these trends to comparable ones for different races (White, Black or African American, Asian or Pacific Islanders, American Indian or Alaskan Native). These different race groupings defined by the CDC. 
