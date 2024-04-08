@@ -47,43 +47,73 @@ female_hispanic_cdc_45to64 = female_hispanic_cdc_45to64.dropna(subset=['ESTIMATE
 female_hispanic_cdc_65above = cdc_data[(cdc_data['STUB_LABEL'] == 'Female: Hispanic or Latino: All races: 65 years and over') & (cdc_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
 female_hispanic_cdc_65above = female_hispanic_cdc_65above.dropna(subset=['ESTIMATE'])
 
-male_hispanic_cdc.to_csv('male_hispanic_cdc.csv') # all ages
-female_hispanic_cdc.to_csv('female_hispanic_cdc.csv') # all ages
-
+gender_cdc_data = pd.concat([male_hispanic_cdc,female_hispanic_cdc])
+age_male_cdc_data = pd.concat([male_hispanic_cdc_15to24,male_hispanic_cdc_25to44,
+                                 male_hispanic_cdc_45to64,male_hispanic_cdc_65above])
+age_female_cdc_data = pd.concat([female_hispanic_cdc_15to24,female_hispanic_cdc_25to44,
+                                 female_hispanic_cdc_45to64,female_hispanic_cdc_65above])
 
 # Visualize the relationship between year and number of suicide deaths (crude estimate) for the different genders
-plt.scatter(male_hispanic_cdc['YEAR'],male_hispanic_cdc['ESTIMATE'],label='Male',c='blue')
-plt.scatter(female_hispanic_cdc['YEAR'],female_hispanic_cdc['ESTIMATE'],label='Female',c='red')
-plt.title('Suicide Death Rates in US Hispanic & Latino Communities per Year')
-plt.xlabel('Year')
-plt.ylabel('Suicide Deaths (per 100,000 residents)')
-plt.legend(loc='best')
-plt.savefig(fname='deaths_vs_year.jpg')
-plt.close()
+#plt.scatter(male_hispanic_cdc['YEAR'],male_hispanic_cdc['ESTIMATE'],label='Male',c='blue')
+#plt.scatter(female_hispanic_cdc['YEAR'],female_hispanic_cdc['ESTIMATE'],label='Female',c='red')
+#plt.title('Suicide Death Rates in US Hispanic & Latino Communities per Year')
+#plt.xlabel('Year')
+#plt.ylabel('Suicide Deaths (per 100,000 residents)')
+#plt.legend(loc='best')
+#plt.savefig(fname='deaths_vs_year.jpg')
+#plt.close()
+
+fig1 = px.scatter(gender_cdc_data,x='YEAR',y='ESTIMATE',color='STUB_LABEL',
+                  labels={
+                      'YEAR': 'Year',
+                      'ESTIMATE': 'Suicide Deaths (per 100,000 residents)',
+                      'STUB_LABEL': 'Genders'
+                  },
+                  title="Suicide Death Rates in US Hispanic & Latino Communities per Year")
+fig1.write_html("deaths_vs_year.html")
+
 
 # Visualize the relationship between year and number of suicide deaths (crude estimate) for the different ages (male)
-plt.scatter(male_hispanic_cdc_15to24['YEAR'],male_hispanic_cdc_15to24['ESTIMATE'],label='15-24 years',c='blue')
-plt.scatter(male_hispanic_cdc_25to44['YEAR'],male_hispanic_cdc_25to44['ESTIMATE'],label='25-44 years',c='red')
-plt.scatter(male_hispanic_cdc_45to64['YEAR'],male_hispanic_cdc_45to64['ESTIMATE'],label='45-64 years',c='green')
-plt.scatter(male_hispanic_cdc_65above['YEAR'],male_hispanic_cdc_65above['ESTIMATE'],label='65 years and above',c='orange')
-plt.title('Suicide Death Rates in US Hispanic & Latino Male Communities per Year')
-plt.xlabel('Year')
-plt.ylabel('Suicide Deaths (per 100,000 residents)')
-plt.legend(loc='best')
-plt.savefig(fname='deaths_vs_year_male_ages.jpg')
-plt.close()
+#plt.scatter(male_hispanic_cdc_15to24['YEAR'],male_hispanic_cdc_15to24['ESTIMATE'],label='15-24 years',c='blue')
+#plt.scatter(male_hispanic_cdc_25to44['YEAR'],male_hispanic_cdc_25to44['ESTIMATE'],label='25-44 years',c='red')
+#plt.scatter(male_hispanic_cdc_45to64['YEAR'],male_hispanic_cdc_45to64['ESTIMATE'],label='45-64 years',c='green')
+#plt.scatter(male_hispanic_cdc_65above['YEAR'],male_hispanic_cdc_65above['ESTIMATE'],label='65 years and above',c='orange')
+#plt.title('Suicide Death Rates in US Hispanic & Latino Male Communities per Year')
+#plt.xlabel('Year')
+#plt.ylabel('Suicide Deaths (per 100,000 residents)')
+#plt.legend(loc='best')
+#plt.savefig(fname='deaths_vs_year_male_ages.jpg')
+#plt.close()
+
+fig2 = px.scatter(age_male_cdc_data,x='YEAR',y='ESTIMATE',color='STUB_LABEL',
+                  labels={
+                      'YEAR': 'Year',
+                      'ESTIMATE': 'Suicide Deaths (per 100,000 residents)',
+                      'STUB_LABEL': 'Age Brackets'
+                  },
+                  title="Suicide Death Rates in US Hispanic & Latino Male Communities per Year")
+fig2.write_html("deaths_vs_year_male_ages.html")
 
 # Visualize the relationship between year and number of suicide deaths (crude estimate) for the different ages (female)
-plt.scatter(female_hispanic_cdc_15to24['YEAR'],female_hispanic_cdc_15to24['ESTIMATE'],label='15-24 years',c='blue')
-plt.scatter(female_hispanic_cdc_25to44['YEAR'],female_hispanic_cdc_25to44['ESTIMATE'],label='25-44 years',c='red')
-plt.scatter(female_hispanic_cdc_45to64['YEAR'],female_hispanic_cdc_45to64['ESTIMATE'],label='45-64 years',c='green')
-plt.scatter(female_hispanic_cdc_65above['YEAR'],female_hispanic_cdc_65above['ESTIMATE'],label='65 years and above',c='orange')
-plt.title('Suicide Death Rates in US Hispanic/Latino Female Communities per Year')
-plt.xlabel('Year')
-plt.ylabel('Suicide Deaths (per 100,000 residents)')
-plt.legend(loc='best')
-plt.savefig(fname='deaths_vs_year_female_ages.jpg')
-plt.close()
+#plt.scatter(female_hispanic_cdc_15to24['YEAR'],female_hispanic_cdc_15to24['ESTIMATE'],label='15-24 years',c='blue')
+#plt.scatter(female_hispanic_cdc_25to44['YEAR'],female_hispanic_cdc_25to44['ESTIMATE'],label='25-44 years',c='red')
+#plt.scatter(female_hispanic_cdc_45to64['YEAR'],female_hispanic_cdc_45to64['ESTIMATE'],label='45-64 years',c='green')
+#plt.scatter(female_hispanic_cdc_65above['YEAR'],female_hispanic_cdc_65above['ESTIMATE'],label='65 years and above',c='orange')
+#plt.title('Suicide Death Rates in US Hispanic/Latino Female Communities per Year')
+#plt.xlabel('Year')
+#plt.ylabel('Suicide Deaths (per 100,000 residents)')
+#plt.legend(loc='best')
+#plt.savefig(fname='deaths_vs_year_female_ages.jpg')
+#plt.close()
+
+fig3 = px.scatter(age_female_cdc_data,x='YEAR',y='ESTIMATE',color='STUB_LABEL',
+                  labels={
+                      'YEAR': 'Year',
+                      'ESTIMATE': 'Suicide Deaths (per 100,000 residents)',
+                      'STUB_LABEL': 'Age Brackets'
+                  },
+                  title="Suicide Death Rates in US Hispanic & Latino Female Communities per Year")
+fig3.write_html("deaths_vs_year_female_ages.html")
 
 # Determine a best-fit polynomial for year vs crude estimate
 def cdc_fit(x,a,b,c,d):
