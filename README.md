@@ -4,7 +4,8 @@ Analysis of the suicide death rates of the Hispanic &amp; Latino population with
 ## Datasets<br>
 [Death rates for suicide, by sex, race, Hispanic origin, and age: United States (CDC)](https://data.cdc.gov/NCHS/Death-rates-for-suicide-by-sex-race-Hispanic-origi/9j2v-jamp/about_data) <br>
 [Mental & Behavioral Statistics via OMH (Office of Minority Health)](https://minorityhealth.hhs.gov/mental-and-behavioral-health-hispanics) <br>
-[Underlying Cause of Death, 2018-2021, Single Race (CDC)](https://wonder.cdc.gov/controller/datarequest/D158;jsessionid=8656C16750ED571516010C46F032) <br>
+[Underlying Cause of Death, 2018-2021, Single Race (CDC Wonder)](https://wonder.cdc.gov/controller/datarequest/D158;jsessionid=8656C16750ED571516010C46F032) <br>
+[Provisional Mortality Statistics, 2018 through Last Week (CDC Wonder)](https://wonder.cdc.gov/mcd-icd10-provisional.html) <br>
 
 ##  Terminology to Know<br>
 [Age-Adjusted vs. Crude Data](https://www.nlm.nih.gov/oet/ed/stats/02-600.html#:~:text=It%20is%20important%20to%20remember,for%20comparisons%20to%20other%20populations.) <br>
