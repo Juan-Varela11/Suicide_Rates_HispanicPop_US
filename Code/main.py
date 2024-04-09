@@ -8,43 +8,45 @@ from scipy import optimize
 import sklearn.svm
 
 # Load in data
-cdc_data = pd.read_csv('Death_rates_for_suicide__by_sex__race__Hispanic_origin__and_age__United_States_20240327.csv')
+yr1985to2018_data = pd.read_csv('Death_rates_for_suicide__by_sex__race__Hispanic_origin__and_age__United_States_20240327.csv')
+yr2018to2023_Ages_data = pd.read_csv('ProvisionalMortalityStatistics_2018_2024_Hispanic_AgeGroups_Revised.csv')
+yr2018to2023_Gender_data = pd.read_csv('ProvisionalMortalityStatistics_2018_2024_Hispanic_Genders_Revised.csv')
 
 # Explore & describe complete cdc dataset (remove # sign to see print statements)
-#print(cdc_data.describe())
-#print(cdc_data.shape)
-#print(cdc_data.head(1))
-#print(cdc_data.columns.values)
-#print(cdc_data.info(verbose=True))
+#print(yr1985to2018_data.describe())
+#print(yr1985to2018_data.shape)
+#print(yr1985to2018_data.head(1))
+#print(yr1985to2018_data.columns.values)
+#print(yr1985to2018_data.info(verbose=True))
 
 # Isolate crude data (unadjusted rates) for Male Hispanic or Latino AND Female Hispanic or Latino instances (regardless of race)
 
 # Data to plot year vs. crude estimate (all ages - male)
-male_hispanic_cdc = cdc_data[(cdc_data['STUB_LABEL'] == 'Male: Hispanic or Latino: All races') & (cdc_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
+male_hispanic_cdc = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] == 'Male: Hispanic or Latino: All races') & (yr1985to2018_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
 male_hispanic_cdc = male_hispanic_cdc.dropna(subset=['ESTIMATE'])
 
 # Data to plot year vs. crude estimate (different age brackets - male)
-male_hispanic_cdc_15to24 = cdc_data[(cdc_data['STUB_LABEL'] == 'Male: Hispanic or Latino: All races: 15-24 years') & (cdc_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
+male_hispanic_cdc_15to24 = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] == 'Male: Hispanic or Latino: All races: 15-24 years') & (yr1985to2018_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
 male_hispanic_cdc_15to24 = male_hispanic_cdc_15to24.dropna(subset=['ESTIMATE'])
-male_hispanic_cdc_25to44 = cdc_data[(cdc_data['STUB_LABEL'] == 'Male: Hispanic or Latino: All races: 25-44 years') & (cdc_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
+male_hispanic_cdc_25to44 = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] == 'Male: Hispanic or Latino: All races: 25-44 years') & (yr1985to2018_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
 male_hispanic_cdc_25to44 = male_hispanic_cdc_25to44.dropna(subset=['ESTIMATE'])
-male_hispanic_cdc_45to64 = cdc_data[(cdc_data['STUB_LABEL'] == 'Male: Hispanic or Latino: All races: 45-64 years') & (cdc_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
+male_hispanic_cdc_45to64 = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] == 'Male: Hispanic or Latino: All races: 45-64 years') & (yr1985to2018_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
 male_hispanic_cdc_45to64 = male_hispanic_cdc_45to64.dropna(subset=['ESTIMATE'])
-male_hispanic_cdc_65above = cdc_data[(cdc_data['STUB_LABEL'] == 'Male: Hispanic or Latino: All races: 65 years and over') & (cdc_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
+male_hispanic_cdc_65above = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] == 'Male: Hispanic or Latino: All races: 65 years and over') & (yr1985to2018_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
 male_hispanic_cdc_65above = male_hispanic_cdc_65above.dropna(subset=['ESTIMATE'])
 
 # Data to plot year vs. crude estimate (all ages - female)
-female_hispanic_cdc = cdc_data[(cdc_data['STUB_LABEL'] == 'Female: Hispanic or Latino: All races') & (cdc_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
+female_hispanic_cdc = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] == 'Female: Hispanic or Latino: All races') & (yr1985to2018_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
 female_hispanic_cdc = female_hispanic_cdc.dropna(subset=['ESTIMATE'])
 
 # Data to plot year vs. crude estimate (different age brackets - female)
-female_hispanic_cdc_15to24 = cdc_data[(cdc_data['STUB_LABEL'] == 'Female: Hispanic or Latino: All races: 15-24 years') & (cdc_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
+female_hispanic_cdc_15to24 = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] == 'Female: Hispanic or Latino: All races: 15-24 years') & (yr1985to2018_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
 female_hispanic_cdc_15to24 = female_hispanic_cdc_15to24.dropna(subset=['ESTIMATE'])
-female_hispanic_cdc_25to44 = cdc_data[(cdc_data['STUB_LABEL'] == 'Female: Hispanic or Latino: All races: 25-44 years') & (cdc_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
+female_hispanic_cdc_25to44 = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] == 'Female: Hispanic or Latino: All races: 25-44 years') & (yr1985to2018_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
 female_hispanic_cdc_25to44 = female_hispanic_cdc_25to44.dropna(subset=['ESTIMATE'])
-female_hispanic_cdc_45to64 = cdc_data[(cdc_data['STUB_LABEL'] == 'Female: Hispanic or Latino: All races: 45-64 years') & (cdc_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
+female_hispanic_cdc_45to64 = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] == 'Female: Hispanic or Latino: All races: 45-64 years') & (yr1985to2018_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
 female_hispanic_cdc_45to64 = female_hispanic_cdc_45to64.dropna(subset=['ESTIMATE'])
-female_hispanic_cdc_65above = cdc_data[(cdc_data['STUB_LABEL'] == 'Female: Hispanic or Latino: All races: 65 years and over') & (cdc_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
+female_hispanic_cdc_65above = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] == 'Female: Hispanic or Latino: All races: 65 years and over') & (yr1985to2018_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
 female_hispanic_cdc_65above = female_hispanic_cdc_65above.dropna(subset=['ESTIMATE'])
 
 gender_cdc_data = pd.concat([male_hispanic_cdc,female_hispanic_cdc])
