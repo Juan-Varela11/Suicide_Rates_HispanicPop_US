@@ -1,0 +1,163 @@
+Notes,Gender,Gender Code,Year,Year Code,Ten-Year Age Groups,Ten-Year Age Groups Code,Deaths,Population,Crude Rate
+,Female,F,2018,2018,5-14 years,5-14,38,5166476,0.7
+,Female,F,2018,2018,15-24 years,15-24,194,4786228,4.1
+,Female,F,2018,2018,25-34 years,25-34,230,4488709,5.1
+,Female,F,2018,2018,35-44 years,35-44,148,4169801,3.5
+,Female,F,2018,2018,45-54 years,45-54,100,3484917,2.9
+,Female,F,2018,2018,55-64 years,55-64,93,2510751,3.7
+,Female,F,2018,2018,65-74 years,65-74,28,1458288,1.9
+,Female,F,2018,2018,75-84 years,75-84,10,721560,Unreliable
+,Female,F,2019,2019,5-14 years,5-14,40,5180169,0.8
+,Female,F,2019,2019,15-24 years,15-24,213,4830786,4.4
+,Female,F,2019,2019,25-34 years,25-34,202,4547065,4.4
+,Female,F,2019,2019,35-44 years,35-44,145,4195545,3.5
+,Female,F,2019,2019,45-54 years,45-54,156,3537306,4.4
+,Female,F,2019,2019,55-64 years,55-64,103,2598935,4.0
+,Female,F,2019,2019,65-74 years,65-74,20,1529673,1.3
+,Female,F,2020,2020,5-14 years,5-14,56,5170702,1.1
+,Female,F,2020,2020,15-24 years,15-24,225,4898296,4.6
+,Female,F,2020,2020,25-34 years,25-34,230,4613876,5.0
+,Female,F,2020,2020,35-44 years,35-44,150,4228313,3.5
+,Female,F,2020,2020,45-54 years,45-54,105,3597712,2.9
+,Female,F,2020,2020,55-64 years,55-64,62,2682211,2.3
+,Female,F,2020,2020,65-74 years,65-74,24,1610673,1.5
+,Female,F,2020,2020,75-84 years,75-84,13,794842,Unreliable
+,Female,F,2021,2021,5-14 years,5-14,57,5265327,1.1
+,Female,F,2021,2021,15-24 years,15-24,236,5041798,4.7
+,Female,F,2021,2021,25-34 years,25-34,251,4633132,5.4
+,Female,F,2021,2021,35-44 years,35-44,160,4305507,3.7
+,Female,F,2021,2021,45-54 years,45-54,116,3694115,3.1
+,Female,F,2021,2021,55-64 years,55-64,71,2779704,2.6
+,Female,F,2021,2021,65-74 years,65-74,32,1685617,1.9
+,Female,F,2021,2021,75-84 years,75-84,13,800038,Unreliable
+,Female,F,2022 (provisional),2022,5-14 years,5-14,39,5173176,0.8
+,Female,F,2022 (provisional),2022,15-24 years,15-24,262,5271505,5.0
+,Female,F,2022 (provisional),2022,25-34 years,25-34,240,4680514,5.1
+,Female,F,2022 (provisional),2022,35-44 years,35-44,167,4314069,3.9
+,Female,F,2022 (provisional),2022,45-54 years,45-54,146,3749346,3.9
+,Female,F,2022 (provisional),2022,55-64 years,55-64,87,2834976,3.1
+,Female,F,2022 (provisional),2022,65-74 years,65-74,38,1746486,2.2
+,Female,F,2022 (provisional),2022,75-84 years,75-84,15,853963,Unreliable
+,Female,F,2023 (provisional),2023,5-14 years,5-14,40,5173176,0.8
+,Female,F,2023 (provisional),2023,15-24 years,15-24,160,5271505,3.0
+,Female,F,2023 (provisional),2023,25-34 years,25-34,202,4680514,4.3
+,Female,F,2023 (provisional),2023,35-44 years,35-44,122,4314069,2.8
+,Female,F,2023 (provisional),2023,45-54 years,45-54,106,3749346,2.8
+,Female,F,2023 (provisional),2023,55-64 years,55-64,61,2834976,2.2
+,Female,F,2023 (provisional),2023,65-74 years,65-74,38,1746486,2.2
+,Female,F,2023 (provisional),2023,75-84 years,75-84,17,853963,Unreliable
+,Male,M,2018,2018,5-14 years,5-14,59,5368679,1.1
+,Male,M,2018,2018,15-24 years,15-24,814,5028028,16.2
+,Male,M,2018,2018,25-34 years,25-34,845,4940457,17.1
+,Male,M,2018,2018,35-44 years,35-44,633,4417311,14.3
+,Male,M,2018,2018,45-54 years,45-54,485,3540648,13.7
+,Male,M,2018,2018,55-64 years,55-64,345,2379682,14.5
+,Male,M,2018,2018,65-74 years,65-74,171,1224396,14.0
+,Male,M,2018,2018,75-84 years,75-84,81,514814,15.7
+,Male,M,2018,2018,85+ years,85+,36,181768,19.8
+,Male,M,2019,2019,5-14 years,5-14,56,5387417,1.0
+,Male,M,2019,2019,15-24 years,15-24,841,5053804,16.6
+,Male,M,2019,2019,25-34 years,25-34,888,4978198,17.8
+,Male,M,2019,2019,35-44 years,35-44,629,4460940,14.1
+,Male,M,2019,2019,45-54 years,45-54,467,3590902,13.0
+,Male,M,2019,2019,55-64 years,55-64,316,2477993,12.8
+,Male,M,2019,2019,65-74 years,65-74,149,1292446,11.5
+,Male,M,2019,2019,75-84 years,75-84,71,546044,13.0
+,Male,M,2019,2019,85+ years,85+,28,185323,15.1
+,Male,M,2020,2020,5-14 years,5-14,70,5370470,1.3
+,Male,M,2020,2020,15-24 years,15-24,864,5115417,16.9
+,Male,M,2020,2020,25-34 years,25-34,1037,5013447,20.7
+,Male,M,2020,2020,35-44 years,35-44,660,4514577,14.6
+,Male,M,2020,2020,45-54 years,45-54,478,3652520,13.1
+,Male,M,2020,2020,55-64 years,55-64,299,2573717,11.6
+,Male,M,2020,2020,65-74 years,65-74,175,1367913,12.8
+,Male,M,2020,2020,75-84 years,75-84,82,573624,14.3
+,Male,M,2020,2020,85+ years,85+,36,194795,18.5
+,Male,M,2021,2021,5-14 years,5-14,65,5489909,1.2
+,Male,M,2021,2021,15-24 years,15-24,893,5260371,17.0
+,Male,M,2021,2021,25-34 years,25-34,1133,4952134,22.9
+,Male,M,2021,2021,35-44 years,35-44,747,4689526,15.9
+,Male,M,2021,2021,45-54 years,45-54,512,3833355,13.4
+,Male,M,2021,2021,55-64 years,55-64,316,2751277,11.5
+,Male,M,2021,2021,65-74 years,65-74,175,1470905,11.9
+,Male,M,2021,2021,75-84 years,75-84,92,586962,15.7
+,Male,M,2021,2021,85+ years,85+,34,184053,18.5
+,Male,M,2022 (provisional),2022,5-14 years,5-14,44,5390169,0.8
+,Male,M,2022 (provisional),2022,15-24 years,15-24,908,5525615,16.4
+,Male,M,2022 (provisional),2022,25-34 years,25-34,1129,5027136,22.5
+,Male,M,2022 (provisional),2022,35-44 years,35-44,834,4752831,17.5
+,Male,M,2022 (provisional),2022,45-54 years,45-54,564,3924251,14.4
+,Male,M,2022 (provisional),2022,55-64 years,55-64,356,2823128,12.6
+,Male,M,2022 (provisional),2022,65-74 years,65-74,163,1522584,10.7
+,Male,M,2022 (provisional),2022,75-84 years,75-84,101,621780,16.2
+,Male,M,2022 (provisional),2022,85+ years,85+,33,188077,17.5
+,Male,M,2023 (provisional),2023,5-14 years,5-14,33,5390169,0.6
+,Male,M,2023 (provisional),2023,15-24 years,15-24,726,5525615,13.1
+,Male,M,2023 (provisional),2023,25-34 years,25-34,870,5027136,17.3
+,Male,M,2023 (provisional),2023,35-44 years,35-44,685,4752831,14.4
+,Male,M,2023 (provisional),2023,45-54 years,45-54,427,3924251,10.9
+,Male,M,2023 (provisional),2023,55-64 years,55-64,291,2823128,10.3
+,Male,M,2023 (provisional),2023,65-74 years,65-74,143,1522584,9.4
+,Male,M,2023 (provisional),2023,75-84 years,75-84,79,621780,12.7
+,Male,M,2023 (provisional),2023,85+ years,85+,29,188077,15.4
+---,,,,,,,,,
+"Dataset: Provisional Mortality Statistics, 2018 through Last Week",,,,,,,,,
+Query Parameters:,,,,,,,,,
+Hispanic Origin: Hispanic or Latino,,,,,,,,,
+UCD - Injury Intent: Suicide,,,,,,,,,
+Group By: Gender; Year; Ten-Year Age Groups,,,,,,,,,
+Show Totals: Disabled,,,,,,,,,
+Show Zero Values: False,,,,,,,,,
+Show Suppressed: False,,,,,,,,,
+"Calculate Rates Per: 100,000",,,,,,,,,
+Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups),,,,,,,,,
+---,,,,,,,,,
+Help: See http://wonder.cdc.gov/wonder/help/mcd-provisional.html for more information.,,,,,,,,,
+---,,,,,,,,,
+"Query Date: Apr 10, 2024 2:54:20 PM",,,,,,,,,
+---,,,,,,,,,
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics",,,,,,,,,
+"System, Provisional Mortality on CDC WONDER Online Database. Data are from the final Multiple Cause of Death Files, 2018-2021,",,,,,,,,,
+"and from provisional data for years 2022-2024, as compiled from data provided by the 57 vital statistics jurisdictions through",,,,,,,,,
+"the Vital Statistics Cooperative Program. Accessed at http://wonder.cdc.gov/mcd-icd10-provisional.html on Apr 10, 2024 2:54:20",,,,,,,,,
+PM,,,,,,,,,
+---,,,,,,,,,
+Messages:,,,,,,,,,
+1. Totals are not available for these results due to suppression constraints. More Information:,,,,,,,,,
+http://wonder.cdc.gov/wonder/help/faq.html#Privacy.,,,,,,,,,
+2. Rows with zero Deaths are hidden. Use Quick Options above to show zero rows.,,,,,,,,,
+3. Rows with suppressed Deaths are hidden. Use Quick Options above to show suppressed rows.,,,,,,,,,
+---,,,,,,,,,
+Caveats:,,,,,,,,,
+1. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:,,,,,,,,,
+http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Assurance of Confidentiality.,,,,,,,,,
+2. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:,,,,,,,,,
+http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Unreliable.,,,,,,,,,
+"3. Deaths of persons with Age ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among age groups,",,,,,,,,,
+"so are not included in age-specific counts, age-specific rates or in any age-adjusted rates. More information:",,,,,,,,,
+http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Not Stated.,,,,,,,,,
+"4. Deaths of persons with Hispanic origin ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among",,,,,,,,,
+"Hispanic Origin groups, so are not included in the Hispanic Origin specific counts and rates. More information:",,,,,,,,,
+http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Not Stated.,,,,,,,,,
+5. Information included on the death certificate about the race and Hispanic ethnicity of the decedent is reported by the,,,,,,,,,
+"funeral director as provided by an informant, often the surviving next of kin, or, in the absence of an informant, on the basis",,,,,,,,,
+of observation. Race and ethnicity information from the census is by self-report. To the extent that race and Hispanic origin,,,,,,,,,
+"are inconsistent between these two data sources, death rates will be biased. More information:",,,,,,,,,
+http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Racial Differences.,,,,,,,,,
+"6. The population figures for years 2022 and later are single-race estimates of the July 1 resident population, from the Vintage",,,,,,,,,
+"2022 postcensal series released by the Census Bureau on June 22, 2023. The 2022 series is based on the Modified Blended Base",,,,,,,,,
+"produced by the US Census Bureau in lieu of the April 1, 2020 decennial population count. The Modified Blended Base consists of",,,,,,,,,
+"the blend of Vintage 2020 postcensal population estimates for April 1, 2020, 2020 Demographic Analysis Estimates, and 2020",,,,,,,,,
+Census data from the internal Census Edited File (CEF). The population figures for years 2021 are single-race estimates of the,,,,,,,,,
+"July 1 resident population, based on the Blended Base produced by the US Census Bureau in lieu of the April 1, 2020 decennial",,,,,,,,,
+"population count, from the Vintage 2021 postcensal series released by the Census Bureau on June 30, 2022. The population figures",,,,,,,,,
+"for year 2020 are single-race estimates of the July 1 resident population, from the Vintage 2020 postcensal series based on",,,,,,,,,
+"April 2010 Census, released by the Census Bureau on July 27, 2021. The population figures for year 2019 are single-race",,,,,,,,,
+"estimates of the July 1 resident population, from the Vintage 2019 postcensal series based on April 2010 Census, released by the",,,,,,,,,
+"Census Bureau on June 25, 2020. The population figures for year 2018 are single-race estimates of the July 1 resident",,,,,,,,,
+"population, from the Vintage 2018 postcensal series based on April 2010 Census, released by the Census Bureau on June 20, 2019.",,,,,,,,,
+More information: http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Population Data.,,,,,,,,,
+7. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the,,,,,,,,,
+resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Age,,,,,,,,,
+Group.,,,,,,,,,
+"8. Deaths occurring through March 30, 2024 as of April 07, 2024.",,,,,,,,,
