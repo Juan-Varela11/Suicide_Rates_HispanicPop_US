@@ -9,11 +9,11 @@ import sklearn.svm
 
 # Load in data
 yr1985to2018_data = pd.read_csv('Death_rates_for_suicide__by_sex__race__Hispanic_origin__and_age__United_States_20240327.csv')
-#yr2018to2023_Ages_data = pd.read_csv('ProvisionalMortalityStatistics_2018_2024_Hispanic_AgeGroups_Revised.csv')
+yr2018to2023_Ages_data = pd.read_csv('ProvisionalMortalityStatistics_2018_2024_Hispanic_AgeBrackets_Revised.csv')
 yr2018to2023_Gender_data = pd.read_csv('ProvisionalMortalityStatistics_2018_2024_Hispanic_Genders_Revised.csv')
 
 # Drop unneeded features from datasets 
-#yr2018to2023_Ages_data = yr2018to2023_Ages_data.drop(columns=['Notes','Ten-Year Age Groups Code','Year'])
+yr2018to2023_Ages_data = yr2018to2023_Ages_data.drop(columns=['Notes','Gender Code','Ten-Year Age Groups','Year'])
 yr2018to2023_Gender_data = yr2018to2023_Gender_data.drop(columns=['Notes','Gender Code','Year'])
 
 # Isolate crude data (unadjusted rates) for Male Hispanic or Latino AND Female Hispanic or Latino instances (regardless of race)
