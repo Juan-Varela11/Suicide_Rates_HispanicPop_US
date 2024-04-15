@@ -22,6 +22,10 @@ male_hispanic_cdc = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] == 'Male:
 male_hispanic_cdc = male_hispanic_cdc.dropna(subset=['ESTIMATE'])
 male_hispanic_cdc_2018to2023 = yr2018to2023_Gender_data[yr2018to2023_Gender_data['Gender']== 'Male']
 
+# Isolate different genders for the 2018 - 2023 different age brackets
+yr2018to2023_Ages_Male_data = yr2018to2023_Ages_data[yr2018to2023_Ages_data['Gender']== 'Male']
+yr2018to2023_Ages_Female_data = yr2018to2023_Ages_data[yr2018to2023_Ages_data['Gender']== 'Female']
+
 # Data to plot year vs. crude estimate (different age brackets - male)
 male_hispanic_cdc_15to24 = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] == 'Male: Hispanic or Latino: All races: 15-24 years') & (yr1985to2018_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
 male_hispanic_cdc_15to24 = male_hispanic_cdc_15to24.dropna(subset=['ESTIMATE'])
@@ -31,6 +35,7 @@ male_hispanic_cdc_45to64 = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] ==
 male_hispanic_cdc_45to64 = male_hispanic_cdc_45to64.dropna(subset=['ESTIMATE'])
 male_hispanic_cdc_65above = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] == 'Male: Hispanic or Latino: All races: 65 years and over') & (yr1985to2018_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
 male_hispanic_cdc_65above = male_hispanic_cdc_65above.dropna(subset=['ESTIMATE'])
+
 
 # Data to plot year vs. crude estimate (all ages - female)
 female_hispanic_cdc = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] == 'Female: Hispanic or Latino: All races') & (yr1985to2018_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
@@ -46,7 +51,6 @@ female_hispanic_cdc_45to64 = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] 
 female_hispanic_cdc_45to64 = female_hispanic_cdc_45to64.dropna(subset=['ESTIMATE'])
 female_hispanic_cdc_65above = yr1985to2018_data[(yr1985to2018_data['STUB_LABEL'] == 'Female: Hispanic or Latino: All races: 65 years and over') & (yr1985to2018_data['UNIT'] == 'Deaths per 100,000 resident population, crude')]
 female_hispanic_cdc_65above = female_hispanic_cdc_65above.dropna(subset=['ESTIMATE'])
-
 
 # Concatenating datasets for more complete analysis and visualizations 
 gender_cdc_data = pd.concat([male_hispanic_cdc,female_hispanic_cdc])
@@ -175,6 +179,23 @@ plt.xlabel('Year')
 plt.ylabel('Suicide Death Rate (per 100,000 residents)')
 plt.legend(loc='best')
 plt.savefig(fname='deaths_vs_year_fitextended.jpg')
+plt.close()
+
+# Bar charts to compare number of deaths per between men and women 
+
+#df.drop(index=df.index[-1],axis=0,inplace=True)   how to delete last row in a dataframe
+X_male_data = male_hispanic_cdc_2018to2023['Year Code'].head(male_hispanic_cdc_2018to2023.shape[0] -1) # removing last row since it is a total count 
+X_female_data = female_hispanic_cdc_2018to2023['Deaths'].head(female_hispanic_cdc_2018to2023.shape[0] -1)
+X_axis = np.arange(len(X_male_data)) 
+plt.bar(X_axis - 0.2, X_male_data, 0.4, label = 'Male') 
+plt.bar(X_axis + 0.2, X_female_data, 0.4, label = 'Female') 
+  
+plt.xticks(X_axis, X_male_data) 
+plt.xlabel("Year") 
+plt.ylabel("Number of Suicide Deaths") 
+plt.title("Number of Suicide Deaths: 2018 - 2023") 
+plt.legend(loc='best') 
+plt.savefig(fname='deathcount_v_year_genders_barplot.jpg')
 plt.close()
 
 # Use sklearn to predict future values and compare how they line up to current scipy fit (W.I.P.)
