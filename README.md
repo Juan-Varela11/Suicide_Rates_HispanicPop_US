@@ -19,9 +19,10 @@ Analysis of the suicide death rates of the Hispanic &amp; Latino population with
 [Behavioral Health Concerns about Hispanic and Latino Americans](https://www.samhsa.gov/behavioral-health-equity/hispanic-latino) <br>
 
 ##  Visualizations<br>
-![Suicide Deaths per Year(Male age bracktes](Figures/deaths_vs_year_male_ages.jpg)
-![Suicide Deaths per Year(Male age bracktes](Figures/deaths_vs_year_female_ages.jpg)
-![Suicide Deaths per Year](Figures/deaths_vs_year.jpg)
+![Suicide Death Rates per Year(Male age bracktes](Figures/deaths_vs_year_male_ages.jpg)
+![Suicide Death Rates per Year(Male age bracktes](Figures/deaths_vs_year_female_ages.jpg)
+![Suicide Death Rates per Year](Figures/deaths_vs_year.jpg)
+![Suicide Deaths per Year (bar plot)](Figures/deathcount_v_year_genders_barplot.jpg)
  
 ##  Conclusions<br>
 Observed a higher rate of suicide deaths in the male Hispanic & Latino community when compared to the female population. A higher rate of suicide deaths is present in people younger than 65 within the female population as of 2018, while men see an increasing rate of comparable magnitude across all age brackets except at 65 years or above at which the rate has plateaued. Rates of suicide deaths seeminly experienced a slump from approximately 2000 to 2010, before seeing an increase. <br>
