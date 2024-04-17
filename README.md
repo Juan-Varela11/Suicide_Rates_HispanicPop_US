@@ -1,4 +1,4 @@
-# Suicide Death Rates within the US Hispanic & Latino Communities, 1985 - 2023
+# Hispanic & Latino Suicide Death Rates within the United States, 1985 - 2023
 
 ## Motivation & Goals
 The New York Times has published numerous articles on the rise of mental health symptoms being observed in the younger generations in the United States [1][2][7], as well as higher suicide death rates reported[3][4]. Coming from a Hispanic background, I wish to observe how mental health distress may be affecting the Hispanic & Latino groups within the U.S. by analyzing data on the suicide death rate in these communities. Factors such as poverty, language barriers, and lack of bilingual mental health resources have been cited as a rise in Latino suicide deaths over the years, as well as heightened worry about behavioral healths concerns in the demographic [5][6]. Data is collected from the Centers for Disease Control and Prevention (CDC) and the Office of Minority Health (OMH). Visualizations of suicide trends within the different demographics, genders, and age brackets are constructed.<br>
