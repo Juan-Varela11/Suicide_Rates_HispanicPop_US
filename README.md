@@ -1,5 +1,7 @@
 # Suicide Death Rates within the US Hispanic & Latino Communities.
-Analysis of the suicide death rates of the Hispanic &amp; Latino population within the United States. Data collected from the Centers for Disease Control and Prevention (CDC) and the Office of Minority Health (OMH).  
+
+## Motivation & Goals
+The New York Times has published numerous articles on the rise of mental health symptoms being observed in the younger generations in the United States [1][2], as well as higher suicide death rates reported[3][4]. Coming from a Hispanic background, I wish to observe how mental health distress may be affecting the Hispanic & Latino groups within the U.S. by analyzing data on the suicide death rate in these communities. Data is collected from the Centers for Disease Control and Prevention (CDC) and the Office of Minority Health (OMH). Visualizations of suicide trends within the different demographics, genders, and age brackets are constructed.<br>
 
 ## Datasets<br>
 [Death rates for suicide, by sex, race, Hispanic origin, and age: United States (CDC)](https://data.cdc.gov/NCHS/Death-rates-for-suicide-by-sex-race-Hispanic-origi/9j2v-jamp/about_data) <br>
@@ -30,6 +32,14 @@ Observed a higher rate of suicide deaths in the male Hispanic & Latino community
 Data for 2022 and 2023 is provisional and extracted from CDC Wonder. Provisional data is subject to change until the data are reconciled and verified with the state and territorial data providers.<br>
 
 Will visualize and compare these trends to comparable ones for different races (White, Black or African American, Asian or Pacific Islanders, American Indian or Alaskan Native). These different race groupings defined by the CDC. <br>
+
+## References<br>
+
+1. Richtel, Matt. "Teen Drug and Alcohol Use Linked to Mental Health Distress." The New York Times, 01/29/2024
+2. Richtel, Matt. "'It's Life or Death': The Mental Health Crisis Among U.S Teens." The New York Times, 04/23/2022
+3. Caron, Christina. "U.S. Suicide Deaths Rose in 2022, C.D.C. Estimates Say." The New York Times, 08/11/2023
+4. Barry, Ellen. "Following a Two-Year Decline, Suicide Rates Rose Again in 2021." The New York Times, 07/11/2023
+
 
 <!--- ![Suicide Deaths per Year with poly fit (4th order)](Figures/deaths_vs_year_withfit.jpg) ---!>
 <!--- ![Suicide Deaths per Year with poly fit (4th order) extended by 10 years](Figures/deaths_vs_year_fitextended.jpg) ---!>
