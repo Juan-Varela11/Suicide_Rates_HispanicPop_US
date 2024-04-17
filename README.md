@@ -32,10 +32,10 @@ Will visualize and compare these trends to comparable ones for different races (
 
 ## References<br>
 
-1. Richtel, Matt. "Teen Drug and Alcohol Use Linked to Mental Health Distress." The New York Times, 01/29/2024
-2. Richtel, Matt. "'It's Life or Death': The Mental Health Crisis Among U.S Teens." The New York Times, 04/23/2022
-3. Caron, Christina. "U.S. Suicide Deaths Rose in 2022, C.D.C. Estimates Say." The New York Times, 08/11/2023
-4. Barry, Ellen. "Following a Two-Year Decline, Suicide Rates Rose Again in 2021." The New York Times, 07/11/2023
+1. Richtel, M. (2024, January 29). Teen drug and alcohol use linked to mental health distress. _The New York Times_.
+2. Richtel, M. (2022, April 23).'It's Life or Death': The Mental Health Crisis Among U.S Teens. _The New York Times_.
+3. Caron, C. (2023, August 11). U.S. Suicide Deaths Rose in 2022, C.D.C. Estimates Say. _The New York Times_.
+4. Barry, E. (2023, July 11). Following a Two-Year Decline, Suicide Rates Rose Again in 2021. _The New York Times_.
 5. _Rising Latino suicide rates worry community leaders_. (2024, January 17). NBC News. https://www.nbcnews.com/news/latino/rising-latino-suicide-rates-worry-community-leaders-rcna134363
 6. https://www.samhsa.gov/behavioral-health-equity/hispanic-latino
 7. Price, J. H., & Khubchandani, J. (2022). Hispanic Child Suicides in the United States, 2010-2019. _Journal of community health_, _47_(2), 311–315. https://doi.org/10.1007/s10900-021-01054-4
