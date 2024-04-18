@@ -1,7 +1,7 @@
 # Hispanic & Latino Suicide Death Rates within the United States, 1985 - 2023
 
 ## Motivation & Goals
-The New York Times has published numerous articles on the rise of mental health symptoms being observed in the younger generations in the United States [1][2][7], as well as higher suicide death rates reported[3][4]. Coming from a Hispanic background, I wish to observe how mental health distress may be affecting the Hispanic & Latino groups within the U.S. by analyzing data on the suicide death rate in these communities. Factors such as poverty, language barriers, and lack of bilingual mental health resources have been cited as a rise in Latino suicide deaths over the years, as well as heightened worry about behavioral healths concerns in the demographic [5][6]. Data is collected from the Centers for Disease Control and Prevention (CDC) and the Office of Minority Health (OMH). Visualizations of suicide trends within the different demographics, genders, and age brackets are constructed.<br>
+The New York Times has published numerous articles on the rise of mental health symptoms being observed in the younger generations in the United States [1][2][7], as well as higher suicide death rates being reported [3][4]. Factors such as poverty, language barriers, and lack of bilingual mental health resources have been cited as a rise in Latino suicide deaths over the years, as well as heightened worry about behavioral healths concerns in the demographic [5][6]. Further factors to consider are the prejudice and discrimiation that members of the demographic may experience [8], as well as the need for culturally-tailored interventions to reduce suicide risk in the community [9]. Coming from a Hispanic background, I wish to observe how mental health distress may be affecting the Hispanic & Latino groups within the U.S. by analyzing data on the suicide death rate in these communities.  Data is collected from the Centers for Disease Control and Prevention (CDC) and the Office of Minority Health (OMH). Visualizations of suicide trends within the different demographics, genders, and age brackets are constructed. Patterns in observed trends are noted and commented on, with a focus on any connections between any of the unique groupings.<br>
 
 ## Datasets<br>
 [Death rates for suicide, by sex, race, Hispanic origin, and age: United States (CDC)](https://data.cdc.gov/NCHS/Death-rates-for-suicide-by-sex-race-Hispanic-origi/9j2v-jamp/about_data) <br>
@@ -24,11 +24,11 @@ The New York Times has published numerous articles on the rise of mental health 
 ![Suicide Deaths per Year (bar plot)](Figures/deathcount_v_year_genders_barplot.jpg)
  
 ##  Conclusions<br>
-Observed a higher rate of suicide deaths in the male Hispanic & Latino community when compared to the female population. A higher rate of suicide deaths is present in people younger than 65 within the female population as of 2018, while men see an increasing rate of comparable magnitude across all age brackets except at 65 years or above at which the rate has plateaued. Rates of suicide deaths seeminly experienced a slump from approximately 2000 to 2010, before seeing an increase. <br>
+Observed a higher rate of suicide deaths in the male Hispanic & Latino community when compared to the female population. A higher rate of suicide deaths is present in people younger than 65 within the female population as of 2018, while men see an increasing rate of comparable magnitude across all age brackets except at 65 years or above at which the rate has plateaued. Rates of suicide deaths seeminly experienced a slump from approximately 2000 to 2010, before seeing an increase. For further insight, would be useful to obtain data to compare rates between different sexual orientations to note if any trends lie within those groupings.  <br>
 
-Data for 2022 and 2023 is provisional and extracted from CDC Wonder. Provisional data is subject to change until the data are reconciled and verified with the state and territorial data providers.<br>
+Data for 2022 and 2023 is provisional and extracted from CDC Wonder. Provisional data is subject to change until the data are reconciled and verified with the state and territorial data providers. Once data is fully validated, will recompile data and visuals for a full comparison.<br>
 
-Will visualize and compare these trends to comparable ones for different races (White, Black or African American, Asian or Pacific Islanders, American Indian or Alaskan Native). These different race groupings defined by the CDC. <br>
+Will visualize and compare these trends to comparable ones for different races (White, Black or African American, Asian or Pacific Islanders, American Indian or Alaskan Native), which are pre-defined by the CDC. <br>
 
 ## References<br>
 
@@ -39,6 +39,8 @@ Will visualize and compare these trends to comparable ones for different races (
 5. _Rising Latino suicide rates worry community leaders_. (2024, January 17). NBC News. https://www.nbcnews.com/news/latino/rising-latino-suicide-rates-worry-community-leaders-rcna134363
 6. https://www.samhsa.gov/behavioral-health-equity/hispanic-latino
 7. Price, J. H., & Khubchandani, J. (2022). Hispanic Child Suicides in the United States, 2010-2019. _Journal of community health_, _47_(2), 311–315. https://doi.org/10.1007/s10900-021-01054-4
+8. Silva, C., & Van Orden, K. A. (2018). Suicide among Hispanics in the United States. _Current Opinion in Psychology, 22_, 44–49. https://doi.org/10.1016/j.copsyc.2017.07.013
+9. Khubchandani, J., & Price, J. H. (2022). Suicides among Non-Elderly Adult Hispanics, 2010–2020. _Journal of Community Health, 47_(6), 966–973. https://doi.org/10.1007/s10900-022-01123-2
 
 
 
