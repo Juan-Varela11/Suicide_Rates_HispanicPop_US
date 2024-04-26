@@ -22,6 +22,8 @@ The New York Times has published numerous articles on the rise of mental health 
 ![Suicide Death Rates per Year(Male age bracktes](Figures/deaths_vs_year_female_ages.jpg)
 ![Suicide Death Rates per Year](Figures/deaths_vs_year.jpg)
 ![Suicide Deaths per Year (bar plot)](Figures/deathcount_v_year_genders_barplot.jpg)
+![Suicide Deaths 2023 (pie chart)](Figures/deathcount_male_ages_piechart.jpg)
+![Suicide Deaths 2023 (pie chart)](Figures/deathcount_female_ages_piechart.jpg)
  
 ##  Conclusions<br>
 Observed a higher rate of suicide deaths in the male Hispanic & Latino community when compared to the female population. A higher rate of suicide deaths is present in people younger than 65 within the female population as of 2018, while men see an increasing rate of comparable magnitude across all age brackets except at 65 years or above at which the rate has plateaued. Rates of suicide deaths seeminly experienced a slump from approximately 2000 to 2010, before seeing an increase. For further insight, would be useful to obtain data to compare rates between different sexual orientations to note if any trends lie within those groupings.  <br>
